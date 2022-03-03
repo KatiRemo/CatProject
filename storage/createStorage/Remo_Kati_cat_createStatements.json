@@ -1,0 +1,29 @@
+{
+    "host": "localhost",
+    "port": 3306,
+    "user": "ella",
+    "userpassword": "OsPwT8wT",
+    "debug": true,
+    "database": "catdb",
+    "tables": [
+        {
+            "tableName": "cat",
+            "columns": [
+                "number integer not null primary key",
+                "name varchar(13) not null",
+                "length integer not null",
+                "weightKg integer not null",
+                "breed varchar(20) not null" 
+            ],
+            "data": [
+                [6, "Fluffy", 40, 5, "longtail"],
+                [4, "Puma", 35, 15, "couchPurrer"],
+                [2, "Cute", 32, 10, "sillycat"],
+                [3, "Fatzo", 30, 4, "gigantus"],
+                [5, "Lion II", 33, 6, "yellowbreed"],
+                [7, "Zebra", 50, 7, "domesticus"],
+                [1, "Hairball", 42, 3, "alley cat"]
+            ]
+        }
+    ]
+}

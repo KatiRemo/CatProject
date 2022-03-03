@@ -1,0 +1,17 @@
+{
+    "getAll": ["select number,name,length,weightKg,breed from cat"],
+    "select": [
+        "select number,name,length,weightKg,breed from cat",
+        "where number=?"
+    ],
+    "insert": [
+        "insert into computer (number,name,length,weightKg,breed)",
+        "values(?,?,?,?,?)"
+    ],
+    "update": [
+        "update cat set name=?, length=?, weightKg=?, breed=?",
+        "where number=?"
+    ],
+    "remove":["delete from cat where number=?"],
+    "primaryKey": "number"
+}
