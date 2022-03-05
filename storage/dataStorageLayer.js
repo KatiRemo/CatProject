@@ -7,11 +7,18 @@ const sql = require('./sqlStatements.json');
 const { toArrayInsert, toArrayUpdate } = require('./parameters');
 
 const getAllSql = sql.getAll.join(' ');
-const getSql = sql.get.join(' ');
+// const getSql = sql.get.join(' ');
 const insertSql = sql.insert.join(' ');
 const updateSql = sql.update.join(' ');
 const removeSql = sql.remove.join(' ');
 const PRIMARY_KEY = sql.primaryKey;
+
+console.log(getAllSql);
+// console.log(getSql);
+console.log(insertSql);
+console.log(updateSql);
+console.log(removeSql);
+console.log(PRIMARY_KEY);
 
 module.exports = class DataStorage {
     constructor() {
@@ -34,7 +41,7 @@ module.exports = class DataStorage {
         });
     }
 
-    getOne(key) {
+    get(key) {
         return new Promise(async (resolve, reject) => {
             try {   
                 const result = await this.catdb.doQuery(getSql, [key]);
@@ -48,7 +55,7 @@ module.exports = class DataStorage {
             catch(error) {
                 reject(MESSAGES.PROGRAM_ERROR());
             }
-        });
+        })
     }
 
     insert(cat) {
