@@ -1,6 +1,6 @@
 {
     "getAll": ["select number,name,length,weightKg,breed from cat"],
-    "select": [
+    "get": [
         "select number,name,length,weightKg,breed from cat",
         "where number=?"
     ],

@@ -1,6 +1,8 @@
 {
     "host": "localhost",
     "port": 3306,
+    "admin": "kati",
+    "adminpassword": "bish",
     "user": "ella",
     "userpassword": "OsPwT8wT",
     "debug": true,

@@ -24,18 +24,18 @@ async function createDb(createStatements) {
     const options = {
         host: createStatements.host,
         port: createStatements.port,
-        user: createStatements.user,
-        password: createStatements.password
+        user: createStatements.admin,
+        password: createStatements.adminpassword
     };
 
     const DEBUG = createStatements.debug;
     const catdb = new Database(options);
-    const user = `${createStatements.user}'@'${createStatements.host}`;
+    const user = `'${createStatements.user}'@'${createStatements.host}'`;
     const dropDatabaseSql = `drop database if exists ${createStatements.database}`;
     const createDatabaseSql = `create database ${createStatements.database}`;
     const dropUserSql = `drop user if exists ${user}`;
     const createUserSql = `create user if not exists ${user}` + 
-    `identified by '${createStatements.userpassword}'`;
+    ` identified by '${createStatements.userpassword}'`;
     const grantPrivilegesSql = `grant all privileges on ${createStatements.database}.* to ${user}`;
 
     try {
@@ -69,7 +69,7 @@ async function createDb(createStatements) {
                     for(let data of table.data) {
                         const insertSql =
                         `insert into ${createStatements.database}.${table.tableName}` + 
-                        `values(${Array(data.length).fill('?').join(',')})`;
+                        ` values(${Array(data.length).fill('?').join(',')})`;
                         rows.push(catdb.doQuery(insertSql, data));
                     }
                     await Promise.all(rows);
