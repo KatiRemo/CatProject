@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Cat</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/SPA/public/js/helperFunctions.js"></script>
+    <script src="/SPA/public/js/addHandler.js"></script>
 </head>
 <body>
-    
+    <main>
+        <h1>Add New Cat</h1>
+        <div class="fields">
+            <div>
+                <label>Number: <input type="text" id="number"></label>
+            </div>
+            <div>
+                <label>Name: <input type="text" id="name"></label>
+            </div>
+            <div>
+                <label>Length: <input type="text" id="length"></label>
+            </div>
+            <div>
+                <label>Weight: <input type="text" id="weightKg"></label>
+            </div>
+            <div>
+                <label>Breed: <input type="text" id="breed"></label>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="messagearea"></div>
+        <a href="/"><button>Menu</button></a>
+    </main>
 </body>
 </html>

@@ -5,7 +5,7 @@ const path = require('path');
 const fetch = require('./fetchLib');
 const express = require ('express');
 const app = express();
-const { port, host } = require('./config.json');
+const { port, host } = require('/SPA/configSpa.json');
 const server = http.createServer(app);
 
 app.use(express.json());

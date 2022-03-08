@@ -1,65 +1,64 @@
 body {
-    background-color: mintcream;
-    font-family: "Lato", sans-serif;
-  }
-  
-  h1 {
-    color: #333;
-    font-family: "Lato", sans-serif;
-  }
-  
-  main {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  table {
-    border-collapse: collapse;
-    margin-bottom: 1em;
-  }
-  
-  table,
-  th,
-  td {
-    border: solid 1px #333;
-    border-radius: 5%;
-    padding: 0.5em;
-  }
-  
-  thead {
-    background-color: lightgray;
-  }
-  
-  button {
-    background-color: aquamarine;
-    color: #333;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    width: 150px;
-    font-size: 1rem;
-    font-family: "Lato", sans-serif;
-  }
-  
-  #submit {
-    margin-top: 20px;
-  }
-  
-  .fields {
-    display: grid;
-    font-weight: bold;
-    align-items: flex-end;
-    justify-items: flex-end;
-  }
-  
-  .info {
-    border: solid mediumspringgreen 2px;
-    padding: 1em;
-  }
-  
-  .error {
-    border: solid mediumvioletred 2px;
-    padding: 1em;
-  }
-  
+  background-color: red;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+  border: solid 1px #333;
+  border-radius: 5%;
+  padding: 0.5em;
+}
+
+thead {
+  background-color: lightgray;
+}
+
+button {
+  background-color: aquamarine;
+  color: #333;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+.fields {
+  display: grid;
+  font-weight: bold;
+  align-items: flex-end;
+  justify-items: flex-end;
+}
+
+.info {
+  border: solid mediumspringgreen 2px;
+  padding: 1em;
+}
+
+.error {
+  border: solid mediumvioletred 2px;
+  padding: 1em;
+}
