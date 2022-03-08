@@ -1,8 +1,5 @@
 'use strict';
 
-const res = require("express/lib/response");
-const { json } = require("express/lib/response");
-
 (function() {
     let resultarea;
     let inputfield;
@@ -55,7 +52,7 @@ const { json } = require("express/lib/response");
         resultarea.innerHTML = `
         <p><span class="legend">Number:</span> ${cat.number}</p>
         <p><span class="legend">Name:</span> ${cat.name}</p>
-        <p><span class="legend">Length:</span> ${cat.length}</p>
+        <p><span class="legend">Length:</span> ${cat['length']}</p>
         <p><span class="legend">Weight Kg:</span> ${cat.weightKg}</p>
         <p><span class="legend">Breed:</span> ${cat.breed}</p>
         `;
