@@ -13,13 +13,6 @@ const updateSql = sql.update.join(' ');
 const removeSql = sql.remove.join(' ');
 const PRIMARY_KEY = sql.primaryKey;
 
-// console.log(getAllSql);
-// console.log(getSql);
-// console.log(insertSql);
-// console.log(updateSql);
-// console.log(removeSql);
-// console.log(PRIMARY_KEY);
-
 module.exports = class DataStorage {
     constructor() {
         this.catdb = new Database(options);

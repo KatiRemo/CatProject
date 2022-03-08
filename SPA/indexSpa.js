@@ -78,7 +78,7 @@ app.post('/remove', (req, res) => {
         {method: 'DELETE', mode:'cors'})
         .then(data => data.json())
         .then(result => res.json(result))
-        .err(err => res.json(err));
+        .catch(err => res.json(err));
     }
     else {
         res.json({message:'empty number', type:'error'});
