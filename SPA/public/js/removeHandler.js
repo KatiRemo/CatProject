@@ -22,15 +22,14 @@
                     'Content-Type':'application/json'
                 }
             }
-
             const data = await fetch('/remove', options);
             const result = await data.json();
             if(result.message) {
                 updateMessagearea(result.message, result.type);
             }
         }
-        catch(error) {
-            updateMessagearea(error.message, 'error');
+        catch(err) {
+            updateMessagearea(err.message, 'error');
         }
     }
 })();

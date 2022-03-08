@@ -5,7 +5,7 @@
         "where number=?"
     ],
     "insert": [
-        "insert into computer (number,name,length,weightKg,breed)",
+        "insert into cat (number,name,length,weightKg,breed)",
         "values(?,?,?,?,?)"
     ],
     "update": [

@@ -1,5 +1,5 @@
 body {
-  background-color: mintcream;
+  background-color: honeydew;
   font-family: "Lato", sans-serif;
 }
 
@@ -23,8 +23,8 @@ table,
 th,
 td {
   border: solid 1px #333;
-  border-radius: 5%;
   padding: 0.5em;
+  text-align: center;
 }
 
 thead {
