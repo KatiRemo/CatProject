@@ -1,11 +1,13 @@
 body {
-  background-color: honeydew;
-  font-family: "Lato", sans-serif;
+  background-color: #fff0f5;
+  background: url("https://source.unsplash.com/O_UbPKaz6no") no-repeat fixed
+    center center/cover;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -28,18 +30,18 @@ td {
 }
 
 thead {
-  background-color: lightgray;
+  background-color: #ffb7c5;
 }
 
 button {
-  background-color: aquamarine;
+  background-color: #ffb7c5;
   color: #333;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   width: 150px;
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #submit {
@@ -61,4 +63,18 @@ button {
 .error {
   border: solid mediumvioletred 2px;
   padding: 1em;
+}
+
+input[readonly] {
+  background-color: #acacac;
+}
+
+input {
+  margin: 5px;
+  border-radius: 5px;
+  height: 20px;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 1rem;
 }

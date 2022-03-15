@@ -13,7 +13,7 @@
     function init() {
         numberField = document.getElementById('number');
         nameField = document.getElementById('name');
-        lengthField = document.getElementsByClassName('length');
+        lengthField = document.getElementById('length');
         weightKgField = document.getElementById('weightKg');
         breedField = document.getElementById('breed');
 
@@ -80,9 +80,9 @@
                         'Content-Type': 'application/json'
                     }
                 };
-                const data = await fetch ('/getOne', options);
+                const data = await fetch('/getOne', options);
                 const getResult = await data.json();
-
+                console.log(getResult);
                 if(getResult) {
                     if(getResult.message) {
                         updateMessagearea(getResult.message, getResult.type);
@@ -97,10 +97,10 @@
             }
             else {
                 const cat = {
-                    number: numberField.value,
+                    number: +numberField.value,
                     name: nameField.value,
-                    length: lengthField.value,
-                    weightKg: weightKgField.value,
+                    length: +lengthField.value,
+                    weightKg: +weightKgField.value,
                     breed: breedField.value
                 };
                 const options = {

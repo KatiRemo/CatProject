@@ -37,19 +37,25 @@ app.post('/getOne', (req, res) => {
 
 app.post('/add', (req, res) => {
     const cat = req.body;
-    const options = {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(cat)
-    };
-
-    fetch ('http://localhost:4000/api/cats', options)
-        .then(data => data.json())
-        .then(result => res.json(result))
-        .catch(err => res.json(err));
+    if(+cat.number > 0) {
+        const options = {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(cat)
+        };
+    
+        fetch ('http://localhost:4000/api/cats', options)
+            .then(data => data.json())
+            .then(result => res.json(result))
+            .catch(err => res.json(err));
+    }
+    else {
+        res.json({message:'number is not valid', type:'error'});
+    }
+    
 });
 
 app.post('/update', (req, res) => {

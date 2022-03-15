@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Cat</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="/js/helperFunctions.js"></script>
     <script src="/js/addCat.js"></script>
 </head>
@@ -14,19 +17,19 @@
         <h1>Add New Cat</h1>
         <div class="fields">
             <div>
-                <label>Number: <input type="text" id="number"></label>
+                <label>Id Number: <input type="text" id="number" required></label>
             </div>
             <div>
-                <label>Name: <input type="text" id="name"></label>
+                <label>Name: <input type="text" id="name" required></label>
             </div>
             <div>
-                <label>Length: <input type="text" id="length"></label>
+                <label>Length cm: <input type="text" id="length" required></label>
             </div>
             <div>
-                <label>Weight: <input type="text" id="weightKg"></label>
+                <label>Weight kg: <input type="text" id="weightKg"required></label>
             </div>
             <div>
-                <label>Breed: <input type="text" id="breed"></label>
+                <label>Breed: <input type="text" id="breed" required></label>
             </div>
         </div>
         <button id="submit">Submit</button>

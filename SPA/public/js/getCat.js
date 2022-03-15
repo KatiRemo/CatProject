@@ -52,8 +52,8 @@
         resultarea.innerHTML = `
         <p><span class="legend">Number:</span> ${cat.number}</p>
         <p><span class="legend">Name:</span> ${cat.name}</p>
-        <p><span class="legend">Length:</span> ${cat['length']}</p>
-        <p><span class="legend">Weight Kg:</span> ${cat.weightKg}</p>
+        <p><span class="legend">Length cm:</span> ${cat['length']}</p>
+        <p><span class="legend">Weight kg:</span> ${cat.weightKg}</p>
         <p><span class="legend">Breed:</span> ${cat.breed}</p>
         `;
     }
